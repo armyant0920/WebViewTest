@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript">
+    function androidCallJs(str) {
+        document.getElementById("content").innerHTML = ("您输入了：" + str);
+    }
+</script>
+<style type="text/css">
+body {
+    background-color: #FF80C0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#content {
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 5px 0;
+}
+</style>
+</head>
+<body>
+    <div id="content"></div>
+    <input class="btn" type="button" value="点击Js调用Android"
+        onclick="window.havorld.jsCallAndroid('我来自Js调用')" />
+</body>
+</html>
+</html>
